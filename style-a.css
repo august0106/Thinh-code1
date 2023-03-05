@@ -1,0 +1,108 @@
+html{
+    background-color: rgb(240, 212, 142);
+}
+body{
+    border: 1px solid black;
+    margin: 1%;
+    background-color: aliceblue;
+    width: 100vw;
+}
+header, main, footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+section, aside{
+    flex-direction: row;
+    flex-wrap: wrap;    /* tự xuống dòng khi kích thước thay đổi */
+
+}
+header{
+    border-bottom: 2px solid orange;
+    width: 100%;
+   /*  background-color: aqua; */
+   /*  margin: %;
+  */  /*  flex-grow: 1; */
+  
+  
+}
+header img, header div{
+    flex-direction: row;
+
+}
+header img{
+  /*   flex-grow: 0.5; */
+    width: 15%;
+    margin: 1%;
+}
+header div{
+    text-align: left;
+margin-top: 2%;
+}
+header div h1{
+    color: darkgoldenrod;
+    font-size: 200%;
+}
+header div h2{
+    color: rgb(13, 151, 25) ;
+}
+section{/* 
+    background-color: chartreuse; */
+    flex-grow: 1;
+    column-count: 2;
+    width: 60%;
+      margin: 1%;
+}
+@media screen and (max-width: 420px){
+    section{column-count: 1;};
+    body{width: 95vw};
+}
+    
+section h1{
+    text-align: center;
+}
+
+#section-img{
+    width: 100%;
+    /* margin: 2%; */
+}
+section div img{
+    width: 100%;
+}
+.section-content{
+    font-size: 100%;
+   /*  margin: 2%; */
+   text-align: justify;
+}
+aside{
+    border-left: 2px solid orange;
+    /* background-color: darkgreen; */
+    flex-grow: 1;
+    /* margin: 2%; */
+    padding: 2%;
+}
+aside ul li{
+    font-size: 100%;
+}
+aside ul li a{
+    color: rgb(24, 173, 24) ;
+    font-size: 110%;
+}
+aside ul li a:hover{
+    color: burlywood;
+}
+aside div a{
+    color: goldenrod;
+}
+
+footer{
+    border-top: 2px solid orange;
+    width: 100%;
+   /*  background-color: dimgray; */
+    
+   /*  flex-grow: 1; */
+}
+footer p{
+text-align: right;
+margin: 2%;
+width: 100%;
+}
